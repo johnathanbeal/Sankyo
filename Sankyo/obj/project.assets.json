@@ -100,11 +100,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Github\\TwitterSearchAPI\\WebApplication1\\Sankyo.csproj",
+      "projectUniqueName": "C:\\Github\\TwitterSearchAPI\\Sankyo\\Sankyo.csproj",
       "projectName": "Sankyo",
-      "projectPath": "C:\\Github\\TwitterSearchAPI\\WebApplication1\\Sankyo.csproj",
+      "projectPath": "C:\\Github\\TwitterSearchAPI\\Sankyo\\Sankyo.csproj",
       "packagesPath": "C:\\Users\\jbeal\\.nuget\\packages\\",
-      "outputPath": "C:\\Github\\TwitterSearchAPI\\WebApplication1\\obj\\",
+      "outputPath": "C:\\Github\\TwitterSearchAPI\\Sankyo\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",

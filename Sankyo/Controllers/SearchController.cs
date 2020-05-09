@@ -8,6 +8,11 @@ using System.Linq;
 using System.Net;
 using System.Threading.Tasks;
 using Microsoft.Extensions.Configuration;
+using Microsoft.AspNetCore.DataProtection;
+using System.Text.Json;
+using System.Runtime.InteropServices.ComTypes;
+using System.Net.Http;
+using System.Net.Http.Headers;
 
 namespace Sankyo.Controllers
 {
@@ -20,70 +25,97 @@ namespace Sankyo.Controllers
             authInfo = new AuthenticationInfo(icon);
         }
 
-        public void Page_Load(object sender, EventArgs e)
+        public async Task Page_Load(object sender, EventArgs e)
         {
-            using (var client = new System.Net.Http.HttpClient())
-            {
-                    string q = "q=coronavirus";
+                   string q = "q=coronavirus";
 
-                    ResultType result_type = ResultType.mixed;
+                    ResultType result_type = ResultType.popular;
 
                     string lang = "&lang=English";
 
                     string latitude = "39.035147";
                     string longitude = "-77.503127";
                     string radius = "3000";
-                    string geocode = "&geocode=" + latitude + "," + longitude + "," + radius;
+                    string geocode = "";//"&geocode=" + latitude + "," + longitude + "," + radius;
 
                     string count = "&count=99";
 
                     int since_id = 99999;
 
-                    string max_id = "&max_id=100";
+                    string max_id = "";//"&max_id=100";
 
                     string include_entities = "&include_entities=true";
 
-                    string unformatted = "https://api.twitter.com/1.1/search/tweets.json";
+                    string _base = "https://api.twitter.com/1.1/search/tweets.json";
+                    string append = "?" + q + geocode + lang + "&result_type=" + result_type.ToString() +
+                    count + max_id + include_entities;
 
-                    string url = String.Format(unformatted + "?" + q + geocode + lang + "&result_type=" + result_type.ToString() +
-                    count + max_id + include_entities);
-                string url2 = url;
-                    client.BaseAddress = new System.Uri(url);
+                    string url = String.Format(_base);
+                    Console.WriteLine("\nThe URI is ${url}");
 
-                Uri _url = client.BaseAddress;
+                    
 
-                    client.DefaultRequestHeaders.Add("Authorization", $"Bearer " + authInfo.BEARER);
+            using (var client = new HttpClient())
+            {
+                client.BaseAddress = new Uri(_base);
 
-                WebRequest requestObject = WebRequest.Create(client.BaseAddress);
-                requestObject.Method = "GET";
-                HttpWebResponse responseObjectGet = null;
+                client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", authInfo.BEARER);
 
+                HttpResponseMessage response = new HttpResponseMessage();
+
+                response = await client.GetAsync(append).ConfigureAwait(false);
+
+                if (response.IsSuccessStatusCode)
+                {
+                    String result = response.Content.ReadAsStringAsync().Result;
+                    //responseObj = JsonConvert.DeserializationObject<
+                    var headers = response.Headers;
+                    var reason = response.ReasonPhrase;
+                    //StreamReader reader = new StreamReader(response.);
+
+                    //string responseFromServer = reader.ReadToEnd();
+
+                    //Console.WriteLine("\nThe contents received:");
+                    Console.WriteLine(headers);
+                    Console.WriteLine(reason);
+
+                    //reader.Close();
+                    //streamResponse.Close();
+                }
+            }
+
+            
+
+            /*HttpWebRequest request = null;
+            HttpWebResponse myWebResponse = null;
                 try
                 {
-                    responseObjectGet = (HttpWebResponse)requestObject.GetResponse();//400 Bad Request.  Works in POSTMAN with same URI and Token
-                }
-                catch (WebException webEx)
+                    request = (HttpWebRequest)WebRequest.Create(url);
+                    request.Method = "GET";
+                    request.Headers.Add("Authorization", authInfo.BEARER);
+                    request.Headers.Add("Connection", "keep-alive");
+                    request.Headers.Add("Content-Type", "application/json");
+                    request.Headers.Add("Accept", "application/json");
+                    myWebResponse = (HttpWebResponse)request.GetResponse();
+            }
+            catch (WebException webEx)
                 {
                     Console.WriteLine(webEx.Response);
                     Console.WriteLine(webEx.Message);
                     Console.WriteLine(webEx.Status);
-
+                    Console.WriteLine(webEx.Data);
+                
                 }
-
-                string stringResults = null;
-                using (Stream stream = responseObjectGet.GetResponseStream())
-                {
-                    StreamReader sr = new StreamReader(stream);
-                    stringResults = sr.ReadToEnd();
-                    sr.Close();
-                }
-            }
-
-
-
-
+                */
             
-            
+           
         }
+
+
+
+
+            
+            
+        
     }
 }
