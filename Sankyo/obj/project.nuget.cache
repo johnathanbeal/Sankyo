@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "7d8JegpCIYtgiEdnIS5lzOqugu1LibzrRMgbwOwjQuY4mlZxUECYl8Hd0a1Np2lZvqjzOvJ2zttFnHzHxoKZ+Q==",
+  "success": true,
+  "projectFilePath": "C:\\Github\\TwitterSearchAPI\\WebApplication1\\Sankyo.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\jbeal\\.nuget\\packages\\microsoft.extensions.configuration\\3.1.3\\microsoft.extensions.configuration.3.1.3.nupkg.sha512",
+    "C:\\Users\\jbeal\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\3.1.3\\microsoft.extensions.configuration.abstractions.3.1.3.nupkg.sha512",
+    "C:\\Users\\jbeal\\.nuget\\packages\\microsoft.extensions.primitives\\3.1.3\\microsoft.extensions.primitives.3.1.3.nupkg.sha512"
+  ],
+  "logs": []
+}
