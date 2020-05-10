@@ -18,6 +18,8 @@ namespace Sankyo.Controllers
 {
     public class SearchController
     {
+        public string SearchString { get; }
+
         readonly AuthenticationInfo authInfo;
 
         public SearchController(IConfiguration icon)
@@ -27,7 +29,7 @@ namespace Sankyo.Controllers
 
         public async Task Page_Load(object sender, EventArgs e)
         {
-                   string q = "q=coronavirus";
+                   string q = "q=moms";
 
                     ResultType result_type = ResultType.popular;
 
@@ -36,7 +38,7 @@ namespace Sankyo.Controllers
                     string latitude = "39.035147";
                     string longitude = "-77.503127";
                     string radius = "3000";
-                    string geocode = "";//"&geocode=" + latitude + "," + longitude + "," + radius;
+                    string geocode = "&geocode=" + latitude + "," + longitude + "," + radius;
 
                     string count = "&count=99";
 
@@ -47,13 +49,11 @@ namespace Sankyo.Controllers
                     string include_entities = "&include_entities=true";
 
                     string _base = "https://api.twitter.com/1.1/search/tweets.json";
-                    string append = "?" + q + geocode + lang + "&result_type=" + result_type.ToString() +
+                    string resource = "?" + q + geocode + lang + "&result_type=" + result_type.ToString() +
                     count + max_id + include_entities;
 
                     string url = String.Format(_base);
-                    Console.WriteLine("\nThe URI is ${url}");
-
-                    
+                    Console.WriteLine("\nThe URI is ${url}");                   
 
             using (var client = new HttpClient())
             {
@@ -63,7 +63,7 @@ namespace Sankyo.Controllers
 
                 HttpResponseMessage response = new HttpResponseMessage();
 
-                response = await client.GetAsync(append).ConfigureAwait(false);
+                response = await client.GetAsync(resource).ConfigureAwait(false);
 
                 if (response.IsSuccessStatusCode)
                 {

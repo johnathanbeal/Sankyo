@@ -1,12 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "iEJsH7mI9/ZWiBSyaaU7CVx4k0f099jtF0YoxeY7pOrceN0p4RlyYQSCMUB7ppGklGUGqwvmKd5+sOny+IIhfw==",
+  "dgSpecHash": "yoY0VPsUY26W1vqh1Q04Zre08dan5Y9hs6XrE5fXrsIzkjz8yDOTRipzbYUMBxkS9fTBUdk3wezaASVAEIk3lA==",
   "success": true,
   "projectFilePath": "C:\\Github\\TwitterSearchAPI\\Sankyo\\Sankyo.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jbeal\\.nuget\\packages\\microsoft.extensions.configuration\\3.1.3\\microsoft.extensions.configuration.3.1.3.nupkg.sha512",
     "C:\\Users\\jbeal\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\3.1.3\\microsoft.extensions.configuration.abstractions.3.1.3.nupkg.sha512",
-    "C:\\Users\\jbeal\\.nuget\\packages\\microsoft.extensions.primitives\\3.1.3\\microsoft.extensions.primitives.3.1.3.nupkg.sha512"
+    "C:\\Users\\jbeal\\.nuget\\packages\\microsoft.extensions.primitives\\3.1.3\\microsoft.extensions.primitives.3.1.3.nupkg.sha512",
+    "C:\\Users\\jbeal\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
   ],
   "logs": []
 }

@@ -4,7 +4,27 @@
     ViewData["Title"] = "Home page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+    <div class="text-center">
+        <h1 class="display-4">Sankyo: the Twitter Search App</h1>
+        <p>
+            <br />
+            <input type="text" asp-for=""/>
+            <br>
+            <div><b>Result Type: </b></div>
+            @Html.RadioButton("resultType", "mixed")
+            <label for="resultType">Mixed</label>
+            @Html.RadioButton("resultType", "recent")
+            <label for="resultType">Recent</label>
+            @Html.RadioButton("resultType", "popular")
+            <label for="resultType">Popular</label>
+            <br />
+            <div><b>Distance </b></div>
+            @*<div><input type="number" style="width:100px" /></div>*@
+            <br />
+            <div><b>Number of Tweets</b>(Must be less than 100)</div>
+            <div> <input type="number" style="width:50px" /> </div>
+        </p>
+
+        @*<p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>*@
+
+    </div>

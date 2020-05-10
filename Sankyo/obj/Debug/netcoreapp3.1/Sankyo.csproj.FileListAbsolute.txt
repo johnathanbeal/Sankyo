@@ -39,8 +39,6 @@ C:\Github\TwitterSearchAPI\WebApplication1\bin\Debug\netcoreapp3.1\Microsoft.Ext
 C:\Github\TwitterSearchAPI\WebApplication1\obj\Debug\netcoreapp3.1\Sankyo.csproj.CoreCompileInputs.cache
 C:\Github\TwitterSearchAPI\WebApplication1\obj\Debug\netcoreapp3.1\Sankyo.MvcApplicationPartsAssemblyInfo.cache
 C:\Github\TwitterSearchAPI\Sankyo\obj\Debug\netcoreapp3.1\Sankyo.csprojAssemblyReference.cache
-C:\Github\TwitterSearchAPI\Sankyo\obj\Debug\netcoreapp3.1\Sankyo.csproj.CoreCompileInputs.cache
-C:\Github\TwitterSearchAPI\Sankyo\obj\Debug\netcoreapp3.1\Sankyo.MvcApplicationPartsAssemblyInfo.cache
 C:\Github\TwitterSearchAPI\Sankyo\obj\Debug\netcoreapp3.1\Sankyo.RazorAssemblyInfo.cache
 C:\Github\TwitterSearchAPI\Sankyo\obj\Debug\netcoreapp3.1\Sankyo.RazorAssemblyInfo.cs
 C:\Github\TwitterSearchAPI\Sankyo\obj\Debug\netcoreapp3.1\Sankyo.AssemblyInfoInputs.cache

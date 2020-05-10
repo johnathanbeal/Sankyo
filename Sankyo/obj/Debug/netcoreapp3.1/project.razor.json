@@ -1,5 +1,5 @@
 {
-  "FilePath": "c:\\Github\\TwitterSearchAPI\\WebApplication1\\Sankyo.csproj",
+  "FilePath": "c:\\Github\\TwitterSearchAPI\\Sankyo\\Sankyo.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-3.0",
     "LanguageVersion": "3.0",
@@ -20521,38 +20521,38 @@
   "RootNamespace": "Sankyo",
   "Documents": [
     {
-      "FilePath": "c:\\Github\\TwitterSearchAPI\\WebApplication1\\Pages\\Shared\\_Layout.cshtml",
-      "TargetPath": "Pages\\Shared\\_Layout.cshtml",
+      "FilePath": "c:\\Github\\TwitterSearchAPI\\Sankyo\\Pages\\Privacy.cshtml",
+      "TargetPath": "Pages\\Privacy.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Github\\TwitterSearchAPI\\WebApplication1\\Pages\\_ViewImports.cshtml",
-      "TargetPath": "Pages\\_ViewImports.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Github\\TwitterSearchAPI\\WebApplication1\\Pages\\Error.cshtml",
+      "FilePath": "c:\\Github\\TwitterSearchAPI\\Sankyo\\Pages\\Error.cshtml",
       "TargetPath": "Pages\\Error.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Github\\TwitterSearchAPI\\WebApplication1\\Pages\\_ViewStart.cshtml",
-      "TargetPath": "Pages\\_ViewStart.cshtml",
+      "FilePath": "c:\\Github\\TwitterSearchAPI\\Sankyo\\Pages\\Shared\\_Layout.cshtml",
+      "TargetPath": "Pages\\Shared\\_Layout.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Github\\TwitterSearchAPI\\WebApplication1\\Pages\\Shared\\_ValidationScriptsPartial.cshtml",
-      "TargetPath": "Pages\\Shared\\_ValidationScriptsPartial.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Github\\TwitterSearchAPI\\WebApplication1\\Pages\\Index.cshtml",
+      "FilePath": "c:\\Github\\TwitterSearchAPI\\Sankyo\\Pages\\Index.cshtml",
       "TargetPath": "Pages\\Index.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Github\\TwitterSearchAPI\\WebApplication1\\Pages\\Privacy.cshtml",
-      "TargetPath": "Pages\\Privacy.cshtml",
+      "FilePath": "c:\\Github\\TwitterSearchAPI\\Sankyo\\Pages\\Shared\\_ValidationScriptsPartial.cshtml",
+      "TargetPath": "Pages\\Shared\\_ValidationScriptsPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Github\\TwitterSearchAPI\\Sankyo\\Pages\\_ViewImports.cshtml",
+      "TargetPath": "Pages\\_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Github\\TwitterSearchAPI\\Sankyo\\Pages\\_ViewStart.cshtml",
+      "TargetPath": "Pages\\_ViewStart.cshtml",
       "FileKind": "mvc"
     }
   ],
